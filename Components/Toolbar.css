@@ -1,0 +1,119 @@
+.PictureViewer_Toolbar {
+    clear: both;
+}
+
+
+/*#region LeftSideOfToolbar*/
+.PictureViewer_Toolbar .Title {
+    font-family: times, Times New Roman, times-roman, georgia, serif;
+    color: #555;
+    font-size: 1.7em;
+    letter-spacing: -1px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.PictureViewer_Toolbar .Title>p {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    /* transform: translateX(0%);
+    animation: example1 15s linear infinite;*/
+}
+
+@keyframes example1 {
+    0% {
+        transform: translateX(10%);
+    }
+    50% {
+        transform: translateX(-40%);
+    }
+    100% {
+        transform: translateX(10%);
+    }
+}
+
+.PictureViewer_Toolbar .Title>p::selection {
+    color: whitesmoke;
+    background: #52B9BB;
+}
+
+.PictureViewer_Toolbar .LeftMenu {
+    display: block;
+    float: left;
+    padding: 1em 1em 0 1em;
+    overflow: hidden;
+    max-width: 45%;
+}
+
+.PictureViewer_Toolbar .image-thumbnail>img {
+    max-height: 2em;
+    min-height: 1.5em;
+    min-width: 1.5em;
+    vertical-align: middle;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.PictureViewer_Toolbar .image-thumbnail {
+    overflow: hidden;
+    float: left;
+    width: 2em;
+    height: 2em;
+    margin-right: 6px;
+    display: flex;   
+    border-radius: 8px;           /* establish flex container */
+    flex-direction: column;     /* stack flex items vertically */
+    justify-content: center;    /* center items vertically, in this case */
+    align-items: center;  
+}
+
+/*#endregion LeftSideOfToolbar*/
+
+
+
+.PictureViewer_Toolbar div.vertical-line {
+    width: 1px;
+    background-color: #D3D3D3;
+    height: 4em;
+    float: left;
+    border: 1px #D3D3D3;
+    border-radius: 2px;
+}
+
+.PictureViewer_Toolbar .ActionsMenu {
+    display: block;
+    float: right;
+    width:12em;
+}
+
+.PictureViewer_Toolbar .ActionsMenu .Action {
+    float: left;
+    width:3em;
+    overflow: hidden;
+}
+
+.PictureViewer_Toolbar .ActionsMenu .Action i {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1.5em;
+    color: #52B9BB;
+    font-weight: lighter;
+    -webkit-font-smoothing: antialiased;
+}
+
+.PictureViewer_Toolbar .ActionsMenu .Action i.ActionDanger {
+    color: red !important;
+    border: solid red;
+    border-width: 0 2px 2px 0;
+}
+
+.PictureViewer_Toolbar .ActionsMenu .Action i.ActionSuccess {
+    color: green;
+    border: solid green;
+    border-width: 0 2px 2px 0;
+}

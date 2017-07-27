@@ -1,0 +1,92 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.verticalLine {
+    border-left: thick solid #ff0000;
+}
+
+i.Arrow {
+    border: solid #52B9BB;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+}
+
+i.Arrow.Close.right {
+    margin-right: 0.05em;
+    margin-left: 0em;
+}
+
+.CloseSybmolWrapper {
+    margin-left: 0.8em;
+}
+
+i.Arrow.Close.left {
+    margin-left: 0.05em;
+    margin-right: 0em;
+}
+
+i.Arrow.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+i.Arrow.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+i.Arrow.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+i.Arrow.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.ImageViewer {
+    width: 100%;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+   
+}
+
+.ImageViewerWrapper {
+    overflow: hidden;
+    width: 100%;
+    max-height: 4000px;
+    height:100%;
+    clear: both;
+    display: block;
+    -webkit-transition: max-height 2s;
+    /* Safari */
+     transition: max-height 2s ease-out;
+}
+
+.Hidden {
+    max-height: 0;
+}
+.Invisible {
+    display: none !important;
+}
+.Wrapper {
+    background: whitesmoke;
+    margin: 20px;
+    -webkit-box-shadow: 10px 10px 53px -15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 53px -15px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 53px -15px rgba(0, 0, 0, 0.75);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+Body {
+    background: green;
+    margin: 0px;
+}
